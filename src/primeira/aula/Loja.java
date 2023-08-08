@@ -1,4 +1,5 @@
 package primeira.aula;
+
 public class Loja {
 
     //atributos - caracteristicas do objeto
@@ -112,4 +113,6 @@ public class Loja {
                 ", estado='" + estado + '\'' +
                 ']';
     }
+
+
 }
