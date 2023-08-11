@@ -30,8 +30,9 @@ public class Shopping {
 
     public void exibirTodasLojas() {
         for (Loja loja : lojas) {
-            System.out.println("--------");
+            System.out.println("-------------------------------");
             loja.exibirInformacoes();
+            System.out.println("-------------------------------");
         }
     }
 
@@ -39,6 +40,8 @@ public class Shopping {
         for (Loja loja : lojas) {
             if (loja.getNome().equalsIgnoreCase(nome)) {
                 loja.exibirInformacoes();
+            } else {
+                System.err.println("Loja não encontrada.");
             }
         }
     }

@@ -1,17 +1,25 @@
 package terceira.aula.v1;
 
+import terceira.aula.v1.enuns.Categoria;
+
 public class Loja {
-    public String nome;
-    private String categoria;
+    private String nome;
+    private Categoria categoria;
     private String piso;
     private String horarioFuncionamento;
 
-    public Loja(){}
+    public Loja() {
+    }
 
-    public Loja(String nome, String categoria,
-                String piso, String horarioFuncionamento) {
+    public Loja(String nome, Categoria categoria, String piso, String horarioFuncionamento) {
         this.nome = nome;
         this.categoria = categoria;
+        this.piso = piso;
+        this.horarioFuncionamento = horarioFuncionamento;
+    }
+
+    public Loja(String nome, String piso, String horarioFuncionamento) {
+        this.nome = nome;
         this.piso = piso;
         this.horarioFuncionamento = horarioFuncionamento;
     }
@@ -24,11 +32,14 @@ public class Loja {
         this.nome = nome;
     }
 
-    public String getCategoria() {
+    public String getDescricaoCategoria(){
+        return categoria.getDescricao();
+    }
+    public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
 
@@ -48,7 +59,7 @@ public class Loja {
         this.horarioFuncionamento = horarioFuncionamento;
     }
 
-    public void exibirInformacoes(){
+    public void exibirInformacoes() {
         System.out.println("Nome: " + nome);
         System.out.println("Categoria: " + categoria);
         System.out.println("Piso: " + piso);
