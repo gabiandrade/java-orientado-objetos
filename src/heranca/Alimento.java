@@ -12,4 +12,9 @@ public class Alimento extends Produto {
     public String getDataValidade() {
         return dataValidade;
     }
+
+    @Override
+    public String getInfoAdicional() {
+        return "Data de validade: " + dataValidade;
+    }
 }

@@ -11,4 +11,9 @@ public class Eletronico extends Produto {
     public String getMarca() {
         return marca;
     }
+
+    @Override
+    public String getInfoAdicional() {
+        return "Marca: " + marca;
+    }
 }
