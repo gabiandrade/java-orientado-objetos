@@ -9,12 +9,13 @@ public class TestePolimorfismo {
     public static void main(String[] args) {
         CarrinhoCompras carrinho = new CarrinhoCompras();
 
-        Eletronico celular = new Eletronico("Smartphone", 999.99, "Samsung");
+        Produto celular = new Eletronico("Smartphone", 999.99, "Samsung");
         Alimento fruta = new Alimento("Maçã", 2.49, "31/12/2023");
+
 
         carrinho.adicionarProduto(celular);
         carrinho.adicionarProduto(fruta);
-        carrinho.exibirItens();
+        //carrinho.exibirItens();
         System.out.println();
 
 

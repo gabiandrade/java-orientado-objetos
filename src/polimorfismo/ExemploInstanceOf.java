@@ -12,6 +12,7 @@ public class ExemploInstanceOf {
 
         System.out.println("Produto 1: " + produto1.getNome());
         if (produto1 instanceof Eletronico) {
+            //casting
             Eletronico eletronico = (Eletronico) produto1;
             System.out.println("Marca: " + eletronico.getMarca());
         }

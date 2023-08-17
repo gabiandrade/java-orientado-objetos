@@ -13,6 +13,10 @@ public class Alimento extends Produto {
         return dataValidade;
     }
 
+    public void teste(){
+
+    }
+
     @Override
     public String getInfoAdicional() {
         return "Data de validade: " + dataValidade;
